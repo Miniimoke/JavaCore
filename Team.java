@@ -17,7 +17,7 @@ public class Team {
     public void doIt(Doable shot) {
         result += shot.toString() + "\n";
         for (Organization organization : organizations)
-            result = result + (" " + organization + " " + shot.doIt(organization) + "\n");
+            result += " " + organization + " " + shot.doIt(organization) + "\n";
     }
 
     public void showResults() {
@@ -29,4 +29,3 @@ public class Team {
         return "Team: " + name + " " + Arrays.toString(organizations);
     }
 }
-//https://github.com/Miniimoke/JavaCore/issues
